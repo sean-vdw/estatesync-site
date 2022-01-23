@@ -1,0 +1,32 @@
+module.exports = {
+  content: [
+    "./src/components/Header.js",
+    "./src/components/Hero.js",
+    "./src/components/Content.js",
+    "./src/components/Pricing.js",
+    "./src/components/TogglePrice.js",
+    "./src/components/Cta.js",
+    "./src/components/Footer.js",
+    "./src/components/Features.js",
+    "./src/components/Testimonials.js",
+    "./src/components/Faq.js",
+    "./src/components/Security.js",
+    "./src/components/PrivacyPolicy.js",
+    "./src/components/TermsOfService.js",
+    "./src/components/Resources.js",
+    "./src/components/Contact.js",
+    "./src/components/About.js",
+    "./src/components/posts/EstatePlanning101.js",
+    "./src/components/posts/UnderstandTrusts.js",
+    "./src/components/posts/CorpTrustee.js",
+    "./src/components/posts/FivePOA.js",
+    "./src/components/posts/HealthCareDirectives.js",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
+}
