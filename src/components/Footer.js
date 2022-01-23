@@ -58,9 +58,9 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -72,9 +72,9 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
