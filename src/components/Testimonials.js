@@ -1,4 +1,5 @@
-import family from '../assets/family.jpg'
+import { useEffect } from 'react';
+import family from '../assets/family.jpg';
 
 const posts = [
   {
@@ -81,6 +82,11 @@ const posts = [
 ]
 
 export default function Testimonials() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <div className="relative bg-sky-800">

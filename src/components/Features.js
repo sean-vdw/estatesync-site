@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
   AnnotationIcon,
   ChatAlt2Icon,
@@ -5,7 +6,7 @@ import {
   LockClosedIcon,
   ShieldCheckIcon,
   UserGroupIcon,
-} from '@heroicons/react/outline'
+} from '@heroicons/react/outline';
 
 const features = [
   { 
@@ -41,6 +42,11 @@ const features = [
 ]
 
 export default function Features() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="relative bg-white py-16 sm:py-24 lg:py-32 lg:mt-0">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">

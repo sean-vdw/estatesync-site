@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import poaPic from '../../assets/Infographic-POA-type-and-agent-authority.png';
 
 export default function FivePOA() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">

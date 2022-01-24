@@ -1,6 +1,6 @@
+import { useEffect } from 'react';
 import { CheckCircleIcon } from '@heroicons/react/solid'
 import TogglePrice from './TogglePrice'
-import { Switch } from '@headlessui/react'
 
 const includedFeatures = [
   'Unlimited account and document storage',
@@ -9,9 +9,13 @@ const includedFeatures = [
   'Guided 1:1 support after a life event',
   'Cancel subscription anytime',
   'Live chat support',
-]
+];
 
 export default function Pricing() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   let displayPrice = 0;
   const toggler = document.querySelector("button[role='switch']");

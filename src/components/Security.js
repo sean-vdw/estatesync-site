@@ -1,10 +1,16 @@
-import aws from '../assets/aws.svg'
-import twilio from '../assets/twilio.svg'
-import encrypted from '../assets/encrypted.svg'
-import puzzle from '../assets/puzzle.svg'
-import hidden from '../assets/hidden.svg'
+import { useEffect } from 'react';
+import aws from '../assets/aws.svg';
+import twilio from '../assets/twilio.svg';
+import encrypted from '../assets/encrypted.svg';
+import puzzle from '../assets/puzzle.svg';
+import hidden from '../assets/hidden.svg';
 
 export default function Security() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="bg-white py-16 sm:py-24 w-full">
       {/* Title */}

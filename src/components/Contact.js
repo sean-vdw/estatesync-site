@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Botpoison from '@botpoison/browser';
 import axios from 'axios';
 import { MailIcon } from '@heroicons/react/outline';
@@ -14,6 +14,10 @@ export default function Contact() {
   const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const onSubmit = async (e) => {
     e.preventDefault();

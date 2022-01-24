@@ -1,8 +1,14 @@
+import { useEffect } from 'react';
 import amazon from '../assets/amazon.svg';
 import twilio from '../assets/twilio.svg';
 import encrypted from '../assets/encrypted.svg';
 
 export default function Hero() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-gray-50">
       <div className="relative overflow-hidden">

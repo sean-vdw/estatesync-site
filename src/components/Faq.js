@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
@@ -59,6 +60,11 @@ function classNames(...classes) {
 }
 
 export default function Faq() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="bg-gray-50">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">

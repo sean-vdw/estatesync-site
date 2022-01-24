@@ -1,8 +1,14 @@
+import { useEffect } from 'react';
 import guide from '../assets/guide.mp4';
 import contact from '../assets/contact.mp4';
 import vchat from '../assets/vchat.jpg';
 
 export default function Content() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
 
     <div className="bg-gray-50">
