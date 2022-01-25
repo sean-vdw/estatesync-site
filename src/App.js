@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import Contact from './components/Contact';
 import About from './components/About';
+import Alert from './components/Alert';
 
 // Resources page posts
 import EstatePlanning101 from './components/posts/EstatePlanning101';
@@ -26,8 +28,15 @@ import FivePOA from './components/posts/FivePOA';
 import HealthCareDirectives from './components/posts/HealthCareDirectives';
 
 function App() {
+  const [alert, setAlert] = useState(false);
+
+  useEffect(() => {
+    setAlert(true);
+  }, []);
+
   return (
     <div className="App">
+      {alert && <Alert/>}
       <Route path='/' component={Header} />
       <Route exact path='/' component={Hero} />
       <Route exact path='/' component={Content} />

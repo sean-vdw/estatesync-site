@@ -16,6 +16,7 @@ module.exports = {
     "./src/components/Resources.js",
     "./src/components/Contact.js",
     "./src/components/About.js",
+    "./src/components/Alert.js",
     "./src/components/posts/EstatePlanning101.js",
     "./src/components/posts/UnderstandTrusts.js",
     "./src/components/posts/CorpTrustee.js",
