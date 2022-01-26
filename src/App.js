@@ -18,7 +18,6 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import Contact from './components/Contact';
 import About from './components/About';
-import Alert from './components/Alert';
 
 // Resources page posts
 import EstatePlanning101 from './components/posts/EstatePlanning101';
