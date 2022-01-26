@@ -28,15 +28,8 @@ import FivePOA from './components/posts/FivePOA';
 import HealthCareDirectives from './components/posts/HealthCareDirectives';
 
 function App() {
-  const [alert, setAlert] = useState(false);
-
-  useEffect(() => {
-    setAlert(true);
-  }, []);
-
   return (
     <div className="App">
-      {alert && <Alert/>}
       <Route path='/' component={Header} />
       <Route exact path='/' component={Hero} />
       <Route exact path='/' component={Content} />
